@@ -1,0 +1,52 @@
+<?php
+session_start();
+require "include/db.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>LaWoMen - Корзина</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/img/logo2.png" alt="Logo"></a>
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Корзина</a></li>
+                <li class="nav-item"><a class="nav-link" href="lk.html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="cart">
+    <div class="cart-inner">
+        <div class="cart-block">
+            <div class="cart-info">
+            <div class="cart-img"><img src="assets/img/2az4z23fz1sg9xunnp39ixvzq1efhz30.jpg" alt="Product name"></div>
+                <h2 class="cart-title">Product name</h2>
+                <h2 class="cart-title">Размер: SIZE</h2>
+                <form class="for_button" method="POST" action="include/process_order.php">
+                    <input type="hidden" name="product_id" value="">
+                    <button class="default-button" type="submit" name="submit_order">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+        <form method="POST" action="clear_cart.php">
+            <button class="default-button" type="submit" name="clear_cart">Очистить корзину</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>

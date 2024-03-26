@@ -1,0 +1,64 @@
+<?php
+session_start();
+require "include/db.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="robots" content="follow">
+    <meta name="description" content="Интернет-магазин стритвир-товаров в Чебоксарах. Широкий выбор модной уличной одежды, обуви и аксессуаров для молодежи и всех, кто следит за трендами. У нас вы найдете стильные и качественные товары по выгодным ценам. Быстрая доставка по городу и возможность самовывоза. Закажите прямо сейчас и выразите свой стиль с нашими продуктами!">
+    <title>LaWoMen</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Корзина</a></li>
+                <li class="nav-item"><a class="nav-link" href="lk.html">Личный кабинет</a></li>
+                <li class="nav-item"><a class="nav-link" href="reg.html">Вход</a></li>';
+            </ul>
+        </nav>
+        <div class="background-img"></div>
+        <div class="overlay"></div>
+        <div class="header-logo">
+            <img src="assets/img/logo.png" alt="Logo">
+        </div>
+    </header>
+    <main class="about">
+        <h1 class="main-title">ОБ LAWOMEN CLOTHING</h1>
+        <p class="brand-text">LaWoMen — российская субкультурная марка уличной одежды, основанная в 2023 году в Чебокарах.</p>
+        <p class="about-brand">«LaWoMen — уличная униформа, сделанная в сотрудничестве с близкими по духу людьми»</p>
+        <p class="about-brand">«LaWoMen — небольшая чебоксарская марка одежды. Хотя одежда сама по себе играет тут роль не большую, чем пустой холст, а на первом плане находятся принты и их авторы — молодые художники, иллюстраторы, граффити-райтеры и другие культурные активисты. Имена многих из них знакомы людям, посвященным в российский субкультурный андерграунд, скейтбординг и граффити»</p>
+        <p class="about-brand">LaWoMen — это не просто марка одежды из Чебоксар, это целая культурная платформа. Мы верим, что одежда - это не просто материалы и швы, она является пустым холстом, на котором раскрываются истории и идеи. У нас на первом плане не только качество и стиль, но и принты, которые создают молодые художники, иллюстраторы и граффити-райтеры. Их имена уже стали знакомыми в российском субкультурном андерграунде, среди людей, ценящих скейтбординг, граффити и другие формы культурного выражения.</p>
+    </main>
+    <section class="gallery">
+        <div class="photo">
+            <img class="photos" src="assets/img/1.jpg" alt="brand photos">
+            <img class="photos" src="assets/img/25.jpg" alt="brand photos">
+            <img class="photos" src="assets/img/10_1.jpg" alt="brand photos">
+            <img class="photos" src="assets/img/2.jpg" alt="brand photos">
+            <img class="photos" src="assets/img/21.jpg" alt="brand photos">
+            <img class="photos" src="assets/img/EKh3M0ZXkAIDAPE.jpeg" alt="brand photos">
+            <img class="photos" src="assets/img/IMG_8650.jpg" alt="brand photos">
+            <img class="photos" src="assets/img/pepsi.jpg" alt="brand photos">
+            <img class="photos" src="assets/img/revo.jpg" alt="brand photos">
+            <img class="photos" src="assets/img/wolee.jpg" alt="brand photos">
+        </div>
+    </section>
+    <footer class="footer">
+        <h2 class="footer-title">Наш магазин LaWoMen</h2>
+        <p class="footer-text">Адрес: Чебоксары, ТЦ «Диапозон», пр. Тракторостроителей, 36к1</p>
+        <p class="footer-text">Телефон магазина: +7 (952) 311-73-31</p>
+        <p class="footer-text">Каждый день с 10 до 22 часов</p>
+    </footer>
+</body>
+</html>

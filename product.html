@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>LaWoMen</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/img/logo2.png" alt="Logo"></a>
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Корзина</a></li>
+                <li class="nav-item"><a class="nav-link" href="lk.html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="product-page">
+    <div class="product-inner">
+        <div class="good-img">
+            <img src="assets/img/10_1.jpg" alt="Product_name">
+        </div>
+        <div class="product-info">
+            <h1>Имя товара</h1>
+            <div id="sizeSelection">
+                <h2>SIZE</h2>
+                <form method="POST" action="include/add_to_cart.php">
+    <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
+    <input type="hidden" name="product_name" value="<?php echo $product_name; ?>">
+    <!-- Добавляем скрытое поле для передачи пути к изображению -->
+    <input type="hidden" name="product_photo" value="<?php echo $product_photo; ?>">
+    <label><input type="radio" name="size" value="M">M</label>
+    <button class="default-button" type="submit" name="add_to_cart">Купить</button>
+</form>
+            </div><br><br>
+            <h2>Рекомендации по размерам:</h2>
+            <h3>S-M - рост 160-175см<br>
+                L-XL - рост 175-185см<br>
+                XXL - рост 190+см
+            </h3>
+        </div>
+    </div>
+</main>
+</body>
+</html>

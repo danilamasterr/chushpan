@@ -1,0 +1,255 @@
+body{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+header{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+.header-logo img{
+    width: 150px;
+}
+.header-nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+.nav-list{
+    display: flex;
+    gap: 50px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-item:hover{
+    transform: scale(1.2);
+}
+.nav-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 36px;
+}
+.header-inner{
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(45,0,0);
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    color: #fff;
+    font-size: 26px;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); opacity: 0; }
+    50% { transform: translateX(0%); opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 1; }
+  }
+  .catalog{
+    max-width: 1440px;
+    height: 105vh;
+    margin: 0 auto;
+  }
+  .filters{
+    display: flex;
+    margin-top: 4em;
+  }
+  .dropbtn {
+    background-color: rgb(45,0,0);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown {
+    margin-left: 2em;
+    position: relative;
+    display: inline-block;
+  }
+  .catalog-inner{
+    margin-top: 2em;
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  .product-block{
+    max-width: 480px;
+    height: 400px;
+  }
+  .product-block:hover{
+    transform: scale(1.1);
+  }
+  .to-product{
+    text-decoration: none;
+    color: #000;
+  }
+  .product-img img{
+    width: 300px;
+    height: 333px;
+  }
+  .product-title{
+    color: #000;
+    text-align: center;
+  }
+  .product-price p{
+    font-size: 26px;
+  }
+  .footer{
+    background-color: #000;
+    height: 200px;
+    text-align: center;
+}
+.footer-title{
+    padding-top: 1em;
+    color: #fff;
+}
+.footer-text{
+    color: #fff;
+}
+.lk{
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+.lk-inner{
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-between;
+}
+.personal-info{
+  text-align: center;
+  border: 5px solid rgb(45,0,0);
+  width: 300px;
+  height: 400px;
+}
+.personal-title{
+  color: #000;
+
+}
+.default-input{
+  border: 2px solid rgb(45,0,0);
+  padding: 10px;
+}
+.default-button{
+  border: 2px solid rgb(45,0,0);
+  background: none;
+  padding: 10px;
+}
+.default-button:hover{
+  transform: scale(1.2);
+}
+.product-page{
+  max-width: 850px;
+  margin: 0 auto;
+
+}
+.product-inner{
+  margin-top: 4em;
+  display: flex;
+}
+.good-img img{
+  width: 540px;
+  height: 676px;
+}
+.product-info{
+  margin-left: 4em;
+}
+.reg{
+  margin-top: 4em;
+}
+.reg-inner{
+  display: flex;
+  justify-content: center;
+}
+.reg-form{
+  text-align: center;
+  border: 5px solid rgb(45,0,0);
+  width: 300px;
+  height: 490px;
+}
+.under{
+  color: rgb(45,0,0);
+  text-decoration: underline;
+}
+.log-form{
+  text-align: center;
+  border: 5px solid rgb(45,0,0);
+  width: 300px;
+  height: 300px;
+}
+.cart{
+
+}
+.cart-inner{
+  margin-top: 6em;
+  display: flex;
+  justify-content: center;
+}
+.cart-block{
+  width: 750px;
+  height: auto;
+  border: 2px solid rgb(45,0,0);
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-img img{
+  width: 130px;
+}
+.cart-img{
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.cart-title{
+  padding-top: 2em;
+  padding-left: 2em;
+}
+.button-class{
+  margin-left: 2em;
+  padding-top: 3.5em;
+}
+.cart-info{
+  display: flex;
+  width: 750px;
+}
+.for_button{
+  margin-top: 4em;
+}

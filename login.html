@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/catalog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+        <title>LaWoMen</title>
+    </head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/logo2.png" alt="Logo"></a>
+            </div>
+            <nav class="header-nav">
+            <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="index.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Корзина</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lk.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+    </div>
+</header>
+    <main class="reg">
+        <div class="reg-inner">
+            <form class="log-form" action="include/login_process.php" method="POST">
+                <h1 class="personal-title">Вход</h1>
+                <input class="default-input" type="text" name="phone" placeholder="Телефон"><br><br>
+                <input class="default-input" type="password" name="password" placeholder="Пароль"><br><br>
+                <button class="default-button" type="submit">Войти</button>
+            </form>
+    </div>
+    </main>
+</body>
+</html>
